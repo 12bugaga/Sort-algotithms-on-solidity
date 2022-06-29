@@ -11,7 +11,6 @@ describe("SortAlgorithms", function() {
     let count = 0;
     let acc1;
     let sort;
-    let values = "";
     
     let expectedResult;
     let input;
@@ -32,7 +31,6 @@ describe("SortAlgorithms", function() {
             expectedResult = generateRandomArray();
             input = Array.from(expectedResult);
             expectedResult.sort((a, b) => a - b);
-            values = input.toString() + " => " + expectedResult.toString();
         }
 
         console.log("Algorithm sort - ", sortAlg);
